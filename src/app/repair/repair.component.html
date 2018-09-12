@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col-sm-4" *ngFor="let repair of repairs">
+      <div class="card text-white bg-danger mb-3" style="margin-top:5px">
+        <div class="card-body">
+          <h5 class="card-title">
+            <h2>ID opravy: {{repair.repairId}}</h2>
+          </h5>
+          <h5 class="card-title">
+            <h2>ID auta: {{repair.carId}}</h2>
+          </h5>
+          <p class="card-text">
+            <b>ID uzivatele opravy: </b> {{repair.repairUserId}}</p>
+          <p class="card-text">
+            <b>Zacatek opravy: </b>{{repair.startOfRepair}}</p>
+          <p class="card-text">
+            <b>Konec opravy: </b>{{repair.endOfRepair}}</p>
+          <p class="card-text">
+            <b>Technicka: </b>{{repair.techCheck}}</p>
+          <p class="card-text">
+            <b>Vymena oleje: </b>{{repair.oil}}</p>
+          <p class="card-text">
+            <b>ID nahradnich dilu: </b>{{repair.sparePart}}</p>
+          <a href="#" class="btn btn-primary">Detail opravy</a>
+          <a href="#" class="btn btn-warning">Nahradni Dily</a>
+        </div>
+      </div>
+    </div>
+  </div>

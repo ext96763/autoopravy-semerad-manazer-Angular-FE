@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-sm-4" *ngFor="let part of parts">
+    <div class="card text-white bg-secondary mb-3" style="margin-top:5px">
+      <div class="card-body">
+        <h5 class="card-title">
+          <h2>ID dilu: {{part.partId}}</h2>
+        </h5>
+        <h5 class="card-title">
+          <h2>ID opravy: {{part.repairId}}</h2>
+        </h5>
+        <p class="card-text">
+          <b>ID auta: </b> {{part.carId}}</p>
+        <p class="card-text">
+          <b>Cislo nahradniho dilu: </b>{{part.partNumber}}</p>
+        <p class="card-text">
+          <b>Detail dilu: </b>{{part.partDetail}}</p>
+        <p class="card-text">
+          <b>Datum opravy dilu: </b>{{part.repairDate}}</p>
+        <p class="card-text">
+          <b>ID uzivatele: </b>{{part.partUserId}}</p>
+        <a href="#" class="btn btn-primary">Detail uzivatele</a>
+      </div>
+    </div>
+  </div>
+</div>

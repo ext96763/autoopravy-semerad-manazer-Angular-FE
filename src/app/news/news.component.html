@@ -1,0 +1,37 @@
+<div class="starter-template text-center">
+  <h1>Vypis aktualnich ukolu</h1>
+  <p class="lead">
+    <br>Aktualni ukoly ktere cekaji na opravu</p>
+</div>
+<div class="list-group mb-1">
+  <a href="#" class="list-group-item list-group-item-dark list-group-item-action mb-1" *ngFor="let ns of news">
+    <!-- Six equal columns -->
+    <div class="row mb-1">
+      <div class="col">ID auta:[{{ns.carId}}]</div>
+      <div class="col">Jmeno auta[{{ns.carName}}]</div>
+      <div class="col">Jmeno[{{ns.userName}}]</div>
+      <div class="col">Prijmeni[{{ns.userForename}}]</div>
+      <div class="col">Najeto[{{ns.km}}]</div>
+      <div class="col">Datum technicke[{{ns.techCheckDate}}]</div>
+    </div>
+    <div class="row mb-1">
+      <div class="col">Technicka v KM[{{ns.techCheckKm}}]</div>
+      <div class="col">Datum oleje[{{ns.oilDate}}]</div>
+      <div class="col">Stav km pro Olej[{{ns.oilKm}}]</div>
+      <div class="col">Olej[{{ns.oil}}]</div>
+      <div class="col">Tech.Kontrola[{{ns.techCheck}}]</div>
+      <div class="col">Filtry datum[{{ns.filtersDate}}]</div>
+    </div>
+    <div class="row mb-1">
+      <div class="col">Filtry KM[{{ns.filtersKm}}]</div>
+      <div class="col">Opravit do[{{ns.repairTillDate}}]</div>
+      <div class="col">ID uzivatele: {{ns.userId}}</div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+    </div>
+    <a href="#" class="btn btn-primary mb-1">Detail Ukolu</a>
+    <a href="#" class="btn btn-success mb-1">Vyreseno</a>
+    <p class="text-danger">Duvod opravy: {{ns.detailOfNews}}</p>
+  </a>
+</div>

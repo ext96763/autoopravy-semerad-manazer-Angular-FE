@@ -46,6 +46,14 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ]
+            },
+            "dev":{
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.prod.ts",
+                  "with": "src/environments/environment.ts"
+                }
+              ]
             }
           }
         },
@@ -57,6 +65,9 @@
           "configurations": {
             "production": {
               "browserTarget": "angular5-project:build:production"
+            },
+            "dev": {
+              "browserTarget": "angular5-project:build:dev"
             }
           }
         },

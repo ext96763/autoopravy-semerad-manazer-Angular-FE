@@ -5,7 +5,7 @@ import { CarModel } from '../shared/models/CarModel';
 
 @Component({
   selector: 'user-detail',
-  templateUrl: './user-detail.component.html',
+  // templateUrl: './user-detail.component.html',
   styleUrls: ['./user-detail.component.scss'],
   template: `
   <div class="main-content" >

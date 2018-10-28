@@ -5,12 +5,15 @@ import { UserModel } from '../shared/models/UserModel';
 import { CarModel } from '../shared/models/CarModel';
 import {Observable} from 'rxjs';
 import 'rxjs/add/operator/map'
+import { environment } from '../../environments/environment';
+
+const APIEndpoint = environment.APIEndpoint;
 
 @Injectable()
 export class UserSService {
 
-  api_users_list = 'http://localhost:8090/customers';
-  api_customer_detail = 'http://localhost:8090/user/detail?id=2';
+  api_users_list = APIEndpoint + '/customers';
+  api_customer_detail = 'APIEndpoint/user/detail?id=26';
 
   headers = new HttpHeaders({'Content-Type': 'application/json'});
 

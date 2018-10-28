@@ -5,7 +5,7 @@ import { UserListModel } from '../shared/models/UserListModel';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @Component({
   selector: 'userList',
-  templateUrl: './user.component.html',
+  // templateUrl: './user.component.html',
   styleUrls: ['./user.component.scss'],
   providers: [UserSService],
   template: `

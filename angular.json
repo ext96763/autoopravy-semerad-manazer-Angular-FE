@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular5-project": {
+    "autoopravy-semerad": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -25,6 +25,7 @@
             ],
             "scripts": [
               "./src/assets/jquery-3.1.1.slim.min.js",
+              "./src/assets/tether.min.js",
               "./src/assets/bootstrap.min.js",
               "./src/assets/ie10-viewport-bug-workaround.js"
             ]
@@ -60,21 +61,21 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular5-project:build"
+            "browserTarget": "autoopravy-semerad:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular5-project:build:production"
+              "browserTarget": "autoopravy-semerad:build:production"
             },
             "dev": {
-              "browserTarget": "angular5-project:build:dev"
+              "browserTarget": "autoopravy-semerad:build:dev"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular5-project:build"
+            "browserTarget": "autoopravy-semerad:build"
           }
         },
         "test": {
@@ -112,7 +113,7 @@
         }
       }
     },
-    "angular5-project-e2e": {
+    "autoopravy-semerad-e2e": {
       "root": "e2e",
       "sourceRoot": "e2e",
       "projectType": "application",
@@ -121,7 +122,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "angular5-project:serve"
+            "devServerTarget": "autoopravy-semerad:serve"
           }
         },
         "lint": {
@@ -138,7 +139,7 @@
       }
     }
   },
-  "defaultProject": "angular5-project",
+  "defaultProject": "autoopravy-semerad",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",

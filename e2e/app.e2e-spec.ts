@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('angular5-project App', () => {
+describe('autoopravy-semerad App', () => {
   let page: AppPage;
 
   beforeEach(() => {

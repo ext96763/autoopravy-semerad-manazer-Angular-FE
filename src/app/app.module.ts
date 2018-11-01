@@ -54,5 +54,3 @@ const appRoutes: Routes = [
   bootstrap: [AppComponent ,UserComponent, UserDetailComponent, CarComponent, ReparComponent, PartComponent]
 })
 export class AppModule { }
-
-platformBrowserDynamic().bootstrapModule(AppModule);

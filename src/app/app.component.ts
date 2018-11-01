@@ -10,6 +10,5 @@ export class AppComponent {
   constructor() {
     console.log(environment.APIEndpoint);
   }
-  title = 'url!';
 
 }

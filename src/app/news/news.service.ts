@@ -8,10 +8,10 @@ export class NewsService {
    
   api_news: string = 'http://localhost:8090/news';
 
-  constructor (private http: HttpClient){
-    this.getNewsList();
-  }
+  // constructor (private http: HttpClient){
+  //   this.getNewsList();
+  // }
 
-  //GET User Detail with all cars and repairs
-  getNewsList(): Observable<Array<News>> {return this.http.get<Array<News>>(this.api_news);}
+  // //GET User Detail with all cars and repairs
+  // getNewsList(): Observable<Array<News>> {return this.http.get<Array<News>>(this.api_news);}
 }

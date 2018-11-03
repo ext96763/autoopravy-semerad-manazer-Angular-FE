@@ -3,11 +3,15 @@ import { HttpClientModule, HttpClient, HttpRequest, HttpResponse, HttpHeaders } 
 import { CarModel } from '../shared/models/CarModel';
 import { CarList } from '../shared/models/CarList';
 import {Observable} from 'rxjs';
+import { environment } from '../../environments/environment';
+
+const APIEndpoint = environment.APIEndpoint;
 
 @Injectable()
 export class CarService {
-  api_cars_list = 'http://localhost:8090/cars';
-  api_carDetail_detail = 'http://localhost:8090/car/detail?id=5';
+
+  api_cars_list = APIEndpoint + '/cars';
+  api_carDetail_detail = APIEndpoint + '/car/detail?id=40';
 
   headers = new HttpHeaders({'Content-Type': 'application/json'});
 

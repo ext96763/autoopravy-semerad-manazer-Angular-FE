@@ -13,7 +13,7 @@ const APIEndpoint = environment.APIEndpoint;
 export class UserSService {
 
   api_users_list = APIEndpoint + '/customers';
-  api_customer_detail = 'APIEndpoint/user/detail?id=26';
+  api_customer_detail = APIEndpoint +'/user/detail?id=26';
 
   headers = new HttpHeaders({'Content-Type': 'application/json'});
 
